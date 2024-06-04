@@ -4,7 +4,7 @@ Base de conhecimento e como colocar no ar para testar a base do projeto. [Necess
 
 ## Requisitos
 
-- Banco de dados
+- [Banco de dados](https://github.com/SgT012003/ESPR1-GS2/tree/main/BANCO%20DE%20DADOS)
 - Comando de instalação para as bibliotecas usadas [`pip install Flask requests pyserial mysql-connector-python`]. [python 12.3.x]
 
 ## Separação do projeto
