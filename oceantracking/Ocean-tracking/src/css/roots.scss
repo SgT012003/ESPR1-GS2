@@ -1,0 +1,84 @@
+$main-color: #333333;
+$title-color: #ffffff;
+$background-color: rgba(255, 196, 54, 1);
+$dark-text-color: #000000f0;
+$text-color: #ffffff;
+$primary-color: rgb(12, 53, 106);
+$secondary-color: rgb(1, 116, 190);
+
+$white: #ffffff;
+$dark: #000000;
+
+* {
+    font-family: 'Rubik',sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: $title-color;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(175, 175, 175);
+    
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: $primary-color;
+    border-radius: 1rem;
+  }
+
+body {
+    background-color: $title-color;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.white{
+  color: $text-color;
+}
+
+.tabl{
+  padding: .2rem;
+  border: none;
+  
+}
+
+.tbrela{
+  border: #ffffff;
+  border-width: .2rem;
+}
+
+.title-image {
+  display: flex;
+  width: 100%;
+}
+
+.div-title {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.error{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.error img{
+  width: 60%;
+  padding: 0;
+  margin: 0;
+}
