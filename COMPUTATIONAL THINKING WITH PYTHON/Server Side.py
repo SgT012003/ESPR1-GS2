@@ -24,6 +24,7 @@ config = {
 
 # Configurações do servidor
 app = Flask(__name__)
+CORS(app)
 
 # Função para formatar resposta JSON
 def json4response(response):
