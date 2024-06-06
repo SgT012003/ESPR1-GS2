@@ -3,15 +3,15 @@
 
 @font-face {
     font-family: "Rubik";
-    src: url('/fonts/static/Rubik-Regular.ttf');
+    src: url('../fonts/static/Rubik-Medium.ttf');
 }
 
 body{
-    background: linear-gradient(90deg, rgba(12, 53, 106, 1) 0%, rgba(1, 116, 190, 1) 100%);
+    background: $background-color;
   }
 
 header {
-    background: linear-gradient(90deg, rgba(12, 53, 106, 1) 0%, rgba(1, 116, 190, 1) 100%);
+    background: $background-color;
     padding: 3rem;
 }
 
@@ -59,7 +59,7 @@ header section {
 
 #home{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     color: #fff;
 }
 
@@ -87,6 +87,10 @@ h2 {
 
 h5{
     color: $text-color;
+}
+
+.title{
+    font-size: 4rem;
 }
 
 #problem {
@@ -172,12 +176,8 @@ h5{
 
 .login{
     background-color: #fff;
-    display: flex;
-    border-radius: 2rem;
-    flex-direction: column;
-    width: 40%;
-    padding: 4rem;
-    margin: 3rem;
+
+
 }
 
 .login input {
@@ -210,12 +210,6 @@ h5{
     color: #fff;
     font-size: 2rem;
     text-align: center;
-}
-
-.container {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
 }
 
 .content {

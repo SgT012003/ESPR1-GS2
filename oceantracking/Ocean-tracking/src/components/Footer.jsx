@@ -29,7 +29,7 @@ function topFunction() {
   return (
     <>
     <button onClick={topFunction} id="scrlBtn" title="Go to top">A</button>
-    <section className='content'>
+    <section className='content display-center'>
       <h5 className='white'>@2024-todos os direitos reservados.</h5>
       </section>
     </>

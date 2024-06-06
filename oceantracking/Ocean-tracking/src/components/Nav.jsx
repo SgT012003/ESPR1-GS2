@@ -18,7 +18,7 @@ function Nav() {
         <nav className="topnav" id="myTopnav">
           <div className="topnav">
             <a className="navbar-brand disabled" aria-disabled="true">
-              <img id='logo' src={Logo}/></a>
+              <img id='logo' src={Logo} /></a>
             <Link to="/Home" className="tlink">
               Home
             </Link>
@@ -29,7 +29,7 @@ function Nav() {
               Info
             </Link>
             <a href="javascript:void(0);" className="icon" onClick={navResp}>
-              <i className="fa fa-bars"></i>
+              <i className="bi bi-list"></i>
             </a>
           </div>
         </nav>
