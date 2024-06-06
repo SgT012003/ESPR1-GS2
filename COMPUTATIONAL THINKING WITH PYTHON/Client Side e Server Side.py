@@ -4,13 +4,14 @@
 # Diogo Julio       RM553837 #
 # Victor Didoff     RM552965 #
 # Vinicius Silva    RM553240 #
-#----------------------------#--------------------------------#
-# Comando de Instalação para os imports                       #
-# pip install Flask requests pyserial mysql-connector-python  #
-#-------------------------------------------------------------#
+#----------------------------#------------------------------------------#
+# Comando de Instalação para os imports                                 #
+# pip install Flask requests pyserial mysql-connector-python Flask-Cors #
+#-----------------------------------------------------------------------#
 
 # Server Side
 from flask import Flask, jsonify, request
+from flask_cors import CORS
 
 # Client Side
 from datetime import datetime
@@ -40,6 +41,7 @@ config = {
 
 # Server Side Configs
 app = Flask(__name__)
+CORS(app)
 # end
 
 # extra commands for Client Side
