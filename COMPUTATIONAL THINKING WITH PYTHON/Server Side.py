@@ -4,12 +4,13 @@
 # Diogo Julio       RM553837 #
 # Victor Didoff     RM552965 #
 # Vinicius Silva    RM553240 #
-#----------------------------#--------------------------------#
-# Comando de Instalação para os imports                       #
-# pip install Flask requests pyserial mysql-connector-python  #
-#-------------------------------------------------------------#
+#----------------------------#------------------------------------------#
+# Comando de Instalação para os imports                                 #
+# pip install Flask requests pyserial mysql-connector-python Flask-Cors #
+#-----------------------------------------------------------------------#
 
 from flask import Flask, jsonify, request
+from flask_cors import CORS
 import mysql.connector
 
 # Configurações globais
