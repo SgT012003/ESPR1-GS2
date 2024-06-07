@@ -1,6 +1,16 @@
 # EDGE COMPUTING & COMPUTER SYSTEMS
 Este código é um projeto Arduino que lê dados de múltiplos sensores e imprime os valores na console serial.
 
+## Requisitos
+
+- Wire.h: Esta biblioteca é usada para comunicação I2C e é frequentemente utilizada com dispositivos como sensores e displays. Foi desenvolvida pela equipe do Arduino.
+
+- OneWire.h: Esta biblioteca é usada para comunicação de um único fio com dispositivos que suportam o protocolo OneWire. Foi desenvolvida por Paul Stoffregen.
+
+- DallasTemperature.h: Esta biblioteca é usada para trabalhar com sensores de temperatura da família Dallas/Maxim, como o DS18B20. Foi desenvolvida pela equipe da Miles Burton.
+
+- DHT.h: Esta biblioteca é usada para trabalhar com sensores de temperatura e umidade da família DHT, como o DHT11 e o DHT22. Foi desenvolvida por Adafruit Industries.
+
 ## Descrição
 
 O projeto usa os seguintes sensores:
