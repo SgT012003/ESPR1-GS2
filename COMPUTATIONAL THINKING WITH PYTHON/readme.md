@@ -5,6 +5,7 @@ Base de conhecimento e como colocar no ar para testar a base do projeto. [Necess
 ## Requisitos
 
 - [Banco de dados](https://github.com/SgT012003/ESPR1-GS2/tree/main/BANCO%20DE%20DADOS)
+- [Edge - Arduino](https://github.com/SgT012003/ESPR1-GS2/tree/main/EDGE%20COMPUTING%20%26%20COMPUTER%20SYSTEMS)
 - Comando de instalação para as bibliotecas usadas [`pip install Flask requests pyserial mysql-connector-python Flask-Cors`]. [python 12.3.x]
 
 ## Separação do projeto
