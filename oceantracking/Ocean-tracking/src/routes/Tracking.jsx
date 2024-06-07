@@ -3,22 +3,36 @@ import '../css/style.scss';
 
 function Tracking() {
     const [boias, setBoia] = useState([]);
+    const [pagina, setPagina] = useState(0);
 
     useEffect(() => {
-        console.log("Fazendo requisição para o endpoint /api/data");
-        fetch("http://127.0.0.1:5000/?page=0")
+        fetch(`http://127.0.0.1:5000/?page=${pagina}`)
             .then((resp) => {
-                console.log("Resposta recebida", resp);
+                if (!resp.ok) {
+                    throw new Error('Erro na resposta da rede');
+                }
                 return resp.json();
             })
             .then((data) => {
-                console.log("Dados recebidos:", data);
-                setBoia(data);
+                if (Array.isArray(data)) {
+                    setBoia(data);
+                } else {
+                    throw new Error('Dados não são um array');
+                }
             })
             .catch((error) => {
                 console.error("Erro ao buscar dados:", error);
+                setBoia([]); // Definindo como um array vazio em caso de erro
             });
-    }, []);
+    }, [pagina]);
+
+    const avancarPagina = () => {
+        setPagina((prevPagina) => prevPagina + 1);
+    };
+
+    const retrocederPagina = () => {
+        setPagina((prevPagina) => Math.max(prevPagina - 1, 0));
+    };
 
     return (
         <>
@@ -43,17 +57,21 @@ function Tracking() {
                         {boias.map((item, indice) => (
                             <tr key={indice}>
                                 <td>{item.data}</td>
-                                <td>{item.impurezas}</td>
+                                <td>{item.impurezas} ppm</td>
                                 <td>{item.latitude}</td>
                                 <td>{item.longitude}</td>
-                                <td>{item.temperatura_agua}</td>
-                                <td>{item.temperatura_ambiente}</td>
-                                <td>{item.turbidez}</td>
-                                <td>{item.umidade}</td>
+                                <td>{item.temperatura_agua} ºC</td>
+                                <td>{item.temperatura_ambiente} ºC</td>
+                                <td>{item.turbidez} UNT</td>
+                                <td>{item.umidade} %</td>
                             </tr>
                         ))}
                     </tbody>
                 </table>
+            </section>
+            <section>
+                <button className='enviar' onClick={retrocederPagina} disabled={pagina === 0}>Retroceder</button>
+                <button className='enviar' onClick={avancarPagina} disabled={boias.length < 25}>Avançar</button>
             </section>
         </>
     );

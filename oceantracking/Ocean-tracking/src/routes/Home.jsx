@@ -45,8 +45,8 @@ function Home() {
                 <p>Para enfrentar esses desafios, é essencial dispor de sistemas de monitoramento ambiental que sejam precisos, eficientes e capazes de operar em tempo real. Métodos tradicionais de coleta de dados marinhos, como embarcações de pesquisa e estações fixas, são muitas vezes limitados em alcance e custo-efetividade. Em contrapartida, tecnologias emergentes oferecem novas possibilidades para melhorar a qualidade e a quantidade de dados ambientais coletados.
                 </p>
             </section>
-            <section className='container display-center p-3'>
-                <iframe src="https://www.canva.com/design/DAGHNjQ82NI/cSN1_mJUAOgSTlXPrxpH8A/watch"></iframe>
+            <section className='container display-center p-3 video'>
+                <iframe className='video-frame' src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGHNjQ82NI&#x2F;cSN1_mJUAOgSTlXPrxpH8A&#x2F;watch?embed"></iframe>
             </section>
             <section className='container'>
                 <img src={wave} />

@@ -101,13 +101,16 @@ h5{
 
 }
 
-#video {
+.video {
+    height: 500px !important;
     display: flex;
     justify-content: center;
 
 }
 
-#video-frame {
+.video-frame {
+    width: 60%;
+    height: 100%;
     display: flex;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: 1rem;
@@ -145,18 +148,19 @@ h5{
     padding: .2rem;
 }
 
-#enviar {
+.enviar {
     margin: 1rem;
     padding: .5rem;
-    background-color: rgba(1, 116, 190, 1);
+    background-color: rgb(7, 0, 109);
     border: none;
     border-radius: 1rem;
     color: #fff;
     transition: 450ms ease-in-out;
 }
 
-#enviar:hover {
-    background-color: rgba(12, 53, 106, 1);
+.enviar:hover {
+    color: #000000;
+    background-color: rgb(25, 156, 173);
 }
 
 #group {
