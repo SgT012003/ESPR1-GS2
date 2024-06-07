@@ -10,7 +10,7 @@
 
 ## Projetos e requisitos
 
-- Projeto [Bando de Dados](https://github.com/SgT012003/ESPR1-GS2/tree/main/BANCO%20DE%20DADOS) [`null`]
+- Projeto [Banco de Dados](https://github.com/SgT012003/ESPR1-GS2/tree/main/BANCO%20DE%20DADOS) [`null`]
 - Projeto [Edge](https://github.com/SgT012003/ESPR1-GS2/tree/main/EDGE%20COMPUTING%20%26%20COMPUTER%20SYSTEMS) [`Python`]
 - Projeto [Python](https://github.com/SgT012003/ESPR1-GS2/tree/main/COMPUTATIONAL%20THINKING%20WITH%20PYTHON) [`DB`, `Edge`]
 - Projeto [Web e Front](https://github.com/SgT012003/ESPR1-GS2/tree/main/WEB%20DEVELOPMENT%20e%20FRONT-END%20DESIGN) [`DB`, `Edge`, `Python`]
