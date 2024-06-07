@@ -58,6 +58,35 @@ O código lê dados de cada sensor e calcula os valores correspondentes. Os valo
 |Tds Sensor Pin |A3|
 |DHTPIN |2|
 
+## Circuito [Simulador]
+- Se encontra distante da realidade pois nenhum dos simuladores possue as bibliotecas e os sensores necessarios para uma simulação tão proxima quanto se queira da realidade.
+- 
+### Diagrama Eletrico e Circuito
+- Diagrama Eletrico
+
+![image](https://github.com/SgT012003/ESPR1-GS2/assets/82065998/9e501605-16da-4839-b9de-31519ccce10d)
+
+- Circuito Eletrico
+
+![image](https://github.com/SgT012003/ESPR1-GS2/assets/82065998/fac5f1e6-47b4-45b7-bc5d-b0a43ec3fece)
+
+
+> O codigo no simulador é unico e não possue nenhuma copia dele disponivel no repositorio, acesse-o e visualise.
+> A Utlização da simulação deixou bem claro que o codigo é funcional, e que mesmo com as restrições impostas por ele ainda sim o resultado saiu conforme o esperado!
+
+[Acesso ao Simulador](https://www.tinkercad.com/things/7uPA8Fr5H2B-shiny-habbi/editel?sharecode=U507QSGfEQDFJvckWAncgpCjAyO8a_rujUkXscj-yS4)
+
+## Data-Sheet
+
+|Componetne|Quantidade|
+|:-------:|:---------:|
+|[Arduino Uno R3](https://docs.arduino.cc/resources/datasheets/A000066-datasheet.pdf)|1 u|
+|[Sensor de Turbidez ST100](https://pdf1.alldatasheet.com/datasheet-pdf/view/208335/STMICROELECTRONICS/ST100.html)|1 u|
+|[Sensor de Temperatura ds18b20](https://pdf1.alldatasheet.com/datasheet-pdf/view/58557/DALLAS/DS18B20.html)|1 u|
+|[Sensor de PH PH-4502C](https://cdn.awsli.com.br/969/969921/arquivos/ph-sensor-ph-4502c.pdf)|1 u|
+|[Sensor Medidor de Quantidade de solidos diluidos (tds)](https://wiki.keyestudio.com/KS0429_keyestudio_TDS_Meter_V1.0)|1 u|
+|[Sensor DHT11](https://pdf1.alldatasheet.com/datasheet-pdf/view/1132088/ETC2/DHT11.html)|1 u
+
 ## Resumo
 Este projeto demonstra o uso de múltiplos sensores com uma placa Arduino. O código lê dados de cada sensor, calcula os valores correspondentes e os imprime na console serial. O projeto usa várias funções e variáveis para alcançar essa funcionalidade.
 
