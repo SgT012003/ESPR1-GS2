@@ -11,7 +11,6 @@ import '/node_modules/bootstrap/dist/css/bootstrap.min.css';
 const router = createBrowserRouter ([
   {
     path:'/', element:<App />,
-    errorElement:<Error />,
 
     children: [
       {path: '/Home', element: <Home />},
